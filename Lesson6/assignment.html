@@ -1,0 +1,52 @@
+<h1>Book Donation Form</h1>
+<form>
+
+  <!-- PART 1: Donor Details -->
+  <fieldset>
+    <legend>Donor Details</legend>
+    <label>Your Name: <input type="text" name="name"></label><br><br>
+    <label>Donor ID: <input type="password" name="id"></label><br><br>
+    <label>Donation Date: <input type="date" name="date"></label>
+  </fieldset>
+
+  <!-- PART 2: Book Details -->
+  <!-- PART 3: Title or notes -->
+  <fieldset>
+    <legend>Book Details</legend>
+    <label>Book Category: 
+      <select name="category">
+        <option value="fiction">Fiction</option>
+        <option value="science">Science</option>
+        <option value="history">History</option>
+        <option value="education">Education</option>
+      </select>
+    </label><br><br>
+    
+    <label>Book Condition:</label><br>
+    <input type="radio" id="like-new" name="condition" value="Like New">
+    <label for="like-new">Like New</label>
+    <input type="radio" id="good" name="condition" value="Good">
+    <label for="good">Good</label>
+    <input type="radio" id="used" name="condition" value="Used">
+    <label for="used">Used</label><br><br>
+
+    <label>Book Title or Notes:<br>
+      <textarea name="notes" rows="4" cols="30"></textarea>
+    </label>
+  </fieldset>
+
+  <!-- PART 4: Drop-off days and button -->
+  <fieldset>
+    <legend>Drop-Off Day</legend>
+    <input type="checkbox" id="monday" name="day" value="Monday">
+    <label for="monday">Monday</label>
+    <input type="checkbox" id="wednesday" name="day" value="Wednesday">
+    <label for="wednesday">Wednesday</label>
+    <input type="checkbox" id="friday" name="day" value="Friday">
+    <label for="friday">Friday</label>
+  </fieldset>
+
+  <br>
+  <input type="submit" value="Donate My Book">
+
+</form>
